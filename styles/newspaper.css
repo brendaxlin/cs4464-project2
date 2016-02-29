@@ -59,8 +59,8 @@ p{
 }
 
 .collumn{
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 1.6;
     width: 50%;
     display: inline-block;
     padding: 0 1% 0 1%;
@@ -75,15 +75,15 @@ p{
     font-family: 'Playfair Display', serif;
     display: block;
     margin: 0 auto;
-
-
 }
+
 .collumn .headline.hl1{
     font-weight: 700;
     text-align: left;
-    font-size: 20px;
+    font-size: 26px;
     text-transform: uppercase;
     padding: 10px 0 10px 0;
+    margin-top: 30px;
 
 }
 
@@ -96,7 +96,7 @@ p{
 }
 .collumn .headline.hl4{
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
@@ -196,20 +196,16 @@ p{
 }
 
 .map-container {
-    width: 100%;
+    width: 85%;
     margin: 0;
     padding: 0;
-}
-
-.map-bumper {
-    margin: 0;
-    padding: 0;
-    width: 20%;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 #map {
     margin: 0;
     padding: 0;
-    height: 500px;
+    height: 600px;
     width: 100%;
  }
