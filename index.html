@@ -11,11 +11,19 @@
       
       <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="styles/newspaper.css">
-      
+          
+      <script src="./data/2014.js"></script>
+      <script src="./data/schools.js"></script>
+
       <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
       <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
     </head>
 
+    <script src="./js/main.js"></script>
     <body>
       <div class="head">
           <div class="headerobjectswrapper">
@@ -23,22 +31,45 @@
           </div>
 
           <div class="subhead">CS 4464 — Project 2</div>
+          <div class="map-bumper"></div>
+          <div class="map-container">
+          <div id="map"></div>
+          </div>
+          <div class="map-bumper"></div>
           <div class="content">
             <div class="collumns">
               <div class="collumn">
                 <div class="head">
-                  <span class="headline hl3">A look at how schools in the Atlanta area fare amongst years of crime.</span>
+                  <span class="headline hl3">A look at how schools in the Atlanta area fare amongst local crime.</span>
                   <p><span class="headline hl4">by BRENDA LIN</span></p>
-                  <div class = "body-text"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue interdum maximus. Nulla nisl ipsum, condimentum et velit a, molestie placerat ligula. Morbi rutrum nisl in scelerisque molestie. Nullam eros neque, condimentum quis porttitor eget, tincidunt id nisl. Maecenas eu elementum tortor, a feugiat lorem. Phasellus euismod sem eget molestie porttitor. Proin eu aliquam neque.
+                  
+                  <div class = "body-text">
+                  <span class="headline hl1">Overview</span>
+                  <p>
+                    When homeowners are looking to relocate, one of the most commonly asked questions is how is the local school district and how high is the crime in the area. These future residents, particularly new young couples who looking for a place to put down root for their families, often overlook city residents in favor of more suburan locals as they are often tooted and have proven to be more crime-free and have better education. Historically, residents will move away from an area if the crime rate is higher and education falls. As Atlanta becomes more of a economic hub, more are moving into the area and weighing whether living in areas closer to midtown is worth it based on these two factors.
                   </p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue interdum maximus. Nulla nisl ipsum, condimentum et velit a, molestie placerat ligula. Morbi rutrum nisl in scelerisque molestie. Nullam eros neque, condimentum quis porttitor eget, tincidunt id nisl. Maecenas eu elementum tortor, a feugiat lorem. Phasellus euismod sem eget molestie porttitor. Proin eu aliquam neque.
+                  <p>
+                    With crime data from Atlanta Police Department and educational data of all the high schools in Metro Atlanta schools from the Governor's Office of Student Achievement and Georgia's Department of Education, I mapped out the data to determine whether there was a correlation between the number of crimes in an area and how a school fared academically, particularly at their SAT scores and College and Career Ready Performance Index (CCPRI), which is how the state of Georgia determines whether the students in a area are ready for the next step out of high school. The schools are represented by house icons and the crime by colorful bubbles with individual types of crimes indentified. What I found confirm some of the old affirmations that more crime happens closer to the center of the city and that education was lower in the north and south west sections of the city.
                   </p>
+                  
+                  <span class="headline hl1">Explanation of Variance and Error</span>
+                  <p>Lower Education scores is not necessarily the causation of crime.
+                  </p>
+
+                  <span class="headline hl1">Moving Foward</span>
+                  <p>My next steps in this process would be to identify which areas are increasing in population and determining how seriously new residents are taking in these two factors. In addition to overlaying some census data, I would also contact some new residents of different areas of Atlanta and get some primary accounts of their decisions to move here and whether crime and education was part of their decision to move here.
+                  </p>
+
+                  <span class="headline hl1">Links and Citations</span>
+                  <div><a href="http://www.atlantapd.org/crimedatadownloads.aspx">Atlanta PD Crime Data</a></div>
+                  <div><a href="http://gosa.georgia.gov/2013-14-downloadable-data-files">School Rating and Demographic Data</a></div>
+                  <div><a href="http://www.gadoe.org/CCRPI/Pages/default.aspx">Atlanta CCPRI Data</a></div>
                   </div>
                 </div>
+                <div class="figcaption">This work was done as part of a class assignment for Georgia Tech's CS4464/6465 Fall 2016. The opinions expressed here, if any, are solely those of the students working on this assignment and not of the Instructor or Georgia Tech.</div>
               </div>
             </div>
           </div>
-       <div id="map"></div>
     </body>
 
 </html>

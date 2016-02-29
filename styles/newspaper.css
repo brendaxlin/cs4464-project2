@@ -5,6 +5,8 @@ body{
     font-size: 14px;
     color: #2f2f2f;
     background-color: #f9f7f1;
+    margin: 0;
+    padding: 0;
 }
 header{
     font-family: 'Playfair Display', serif;
@@ -78,7 +80,8 @@ p{
 }
 .collumn .headline.hl1{
     font-weight: 700;
-    font-size: 30px;
+    text-align: left;
+    font-size: 20px;
     text-transform: uppercase;
     padding: 10px 0 10px 0;
 
@@ -192,4 +195,21 @@ p{
 
 }
 
-#map { height: 180px; }
+.map-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.map-bumper {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
+
+#map {
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    width: 100%;
+ }
